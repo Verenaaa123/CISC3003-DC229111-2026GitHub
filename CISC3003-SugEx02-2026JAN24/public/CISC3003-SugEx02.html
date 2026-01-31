@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal one-page website for graduate school and employers." />
+  <title>Student Name | Personal Website</title>
+
+  <!-- Required external CSS filename -->
+  <link rel="stylesheet" href="cisc3003-SugEx02.css" />
+
+  <!-- Similar vibe to the demo: serif headings + clean sans body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header (mimic Central Coffee top bar) -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brand-icon" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Student Name</span>
+          <span class="brand-tagline">Personal Website</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="On-page navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#values">Values</a></li>
+          <li><a href="#aspirations">Aspirations</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO (mimic Central Coffee big banner) -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" role="img" aria-label="Hero image"></div>
+
+      <div class="hero-content container">
+        <h1 class="hero-title">Student Name</h1>
+        <p class="hero-subtitle">Purpose-driven, evidence-based, and ready for graduate school & industry.</p>
+        <a class="hero-cta" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT (light section like demo) -->
+    <section class="section light" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+
+        <p class="section-text">
+          I’m <strong>Student Name</strong>, a student who enjoys building clean, reliable web experiences and turning
+          ambiguous ideas into testable steps. I care about maintainability, clarity, and communicating results
+          to different stakeholders—especially <strong>graduate admissions</strong> and <strong>employers</strong>.
+        </p>
+
+        <p class="section-text">
+          My focus is to grow into a professional who can (1) learn quickly, (2) deliver consistently, and (3) document
+          decisions so teams can move faster. This website highlights what I believe, what I’m working toward, and how
+          to reach me.
+        </p>
+
+        <!-- Four-image row like the demo "About" thumbnails -->
+        <div class="thumb-grid" aria-label="My photo thumbnails">
+          <figure class="thumb">
+            <img src="images/me-1.jpg" alt="My photo 1 (professional background)" />
+          </figure>
+          <figure class="thumb">
+            <img src="images/me-2.jpg" alt="My photo 2 (project or campus background)" />
+          </figure>
+          <figure class="thumb">
+            <img src="images/me-3.jpg" alt="My photo 3 (lab, event, or outdoor background)" />
+          </figure>
+          <figure class="thumb">
+            <img src="images/me-4.jpg" alt="My photo 4 (activity or hobby background)" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES (dark section like demo "Menu") -->
+    <section class="section dark" id="values">
+      <div class="container">
+        <h2 class="section-title section-title--dark">Values</h2>
+
+        <p class="section-text section-text--dark">
+          These values guide how I learn, collaborate, and deliver work—especially when projects are uncertain or time-limited.
+        </p>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3 class="panel-title">What I optimize for</h3>
+            <ul class="panel-list">
+              <li><strong>Long-term growth</strong> — fundamentals that compound.</li>
+              <li><strong>Verifiable progress</strong> — experiments, baselines, and metrics.</li>
+              <li><strong>Clarity</strong> — readable code, clear docs, honest tradeoffs.</li>
+              <li><strong>Reliability</strong> — predictable delivery and careful edge cases.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel-title">How I work with others</h3>
+            <ul class="panel-list">
+              <li><strong>Communicate early</strong> — share risks and timelines.</li>
+              <li><strong>Iterate fast</strong> — ship small improvements and learn.</li>
+              <li><strong>Own outcomes</strong> — fix issues, write post-mortems, improve.</li>
+              <li><strong>Stay humble</strong> — feedback is a shortcut to better work.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASPIRATIONS (same dark-area visual language; Central Coffee has two big cards) -->
+    <section class="section dark" id="aspirations">
+      <div class="container">
+        <h2 class="section-title section-title--dark">Career Aspirations</h2>
+
+        <p class="section-text section-text--dark">
+          I’m preparing for two concrete paths: graduate school and industry roles. My goal is to build depth and demonstrate impact.
+        </p>
+
+        <div class="card-row">
+          <article class="big-card">
+            <img src="images/aspiration-1.jpg" alt="Aspirations image 1" />
+            <h3>Graduate School Track</h3>
+            <ul>
+              <li>Strengthen research readiness: reading, summarizing, replicating results.</li>
+              <li>Build a portfolio of well-scoped experiments and clear write-ups.</li>
+              <li>Find a focus area and connect it to real problems.</li>
+            </ul>
+          </article>
+
+          <article class="big-card">
+            <img src="images/aspiration-2.jpg" alt="Aspirations image 2" />
+            <h3>Industry Track</h3>
+            <ul>
+              <li>Deliver production-minded projects: testing, documentation, performance.</li>
+              <li>Practice teamwork: PRs, code review, issue tracking.</li>
+              <li>Turn outcomes into reusable components and reliable systems.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS (light section like demo "Location") -->
+    <section class="section light" id="interests">
+      <div class="container">
+        <h2 class="section-title">Interests</h2>
+
+        <div class="location-grid">
+          <div class="map-box" aria-label="Interest visual (replace with an image or an embedded map)">
+            <!-- Keep this box to mimic the demo's map block -->
+            <img src="images/me-5.jpg" alt="My photo 5 (replace as needed)" />
+          </div>
+
+          <div class="hours-box">
+            <h3 class="mini-title">Focus Areas</h3>
+            <ul class="hours-list">
+              <li><span>Web Development</span><span>UI, layout, accessibility</span></li>
+              <li><span>Software Engineering</span><span>quality, maintainability</span></li>
+              <li><span>Robotics / Simulation</span><span>verification mindset</span></li>
+              <li><span>Learning Systems</span><span>experiments & iteration</span></li>
+            </ul>
+
+            <p class="mini-note">
+              I choose projects that help me demonstrate both <strong>technical depth</strong> and <strong>clear communication</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES (light section continuation; still Central Coffee vibe) -->
+    <section class="section light" id="hobbies">
+      <div class="container">
+        <h2 class="section-title">Hobbies</h2>
+
+        <p class="section-text">
+          Outside of work, I keep my energy and creativity high through a few consistent hobbies:
+        </p>
+
+        <div class="hobby-grid">
+          <div class="hobby-item">
+            <h3>Fitness</h3>
+            <p>Helps me stay focused and resilient during long projects.</p>
+          </div>
+          <div class="hobby-item">
+            <h3>Reading & Notes</h3>
+            <p>I convert what I learn into structured notes and reusable checklists.</p>
+          </div>
+          <div class="hobby-item">
+            <h3>Photography / Travel</h3>
+            <p>Improves my design sense and gives me high-quality content for my website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG (light section; simple post list like demo text blocks) -->
+    <section class="section light" id="blog">
+      <div class="container">
+        <h2 class="section-title">Blog Posts</h2>
+
+        <div class="post">
+          <p class="post-meta">2026-01-10</p>
+          <h3 class="post-title">How I Structure a One-Page Portfolio for Admissions and Employers</h3>
+          <p class="post-text">
+            I organize content as: value proposition → evidence (projects/skills) → clear contact options.
+            This reduces friction for busy reviewers.
+          </p>
+        </div>
+
+        <div class="post">
+          <p class="post-meta">2025-12-20</p>
+          <h3 class="post-title">My Front-End Quality Checklist (Semantic HTML, Responsive Layout, Performance)</h3>
+          <p class="post-text">
+            “Looks good” is not enough. I check accessibility, performance (images/fonts), maintainable CSS,
+            and basic testing for reliability.
+          </p>
+        </div>
+
+        <div class="post">
+          <p class="post-meta">2025-11-05</p>
+          <h3 class="post-title">A Simple Retrospective Template That Makes My Next Project Better</h3>
+          <p class="post-text">
+            I record assumptions, constraints, tradeoffs, results, and next steps—turning experience into a method.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (light; keep the “Location & Hours” feel) -->
+    <section class="section light" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="location-grid">
+          <div class="map-box">
+            <img src="images/contact.jpg" alt="Contact visual (replace with your own photo or a relevant background)" />
+          </div>
+
+          <div class="hours-box">
+            <h3 class="mini-title">Reach Me</h3>
+            <ul class="contact-list">
+              <li><span>Email</span><a href="mailto:yourname@example.com">yourname@example.com</a></li>
+              <li><span>GitHub</span><a href="#" target="_blank" rel="noreferrer">https://github.com/yourname</a></li>
+              <li><span>LinkedIn</span><a href="#" target="_blank" rel="noreferrer">https://linkedin.com/in/yourname</a></li>
+              <li><span>Location</span><span>Your City</span></li>
+            </ul>
+
+            <p class="mini-note">
+              If you’re a professor, admissions reviewer, or hiring manager, I’d love to connect.
+            </p>
+
+            <a class="hero-cta hero-cta--small" href="#top">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (required line) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-small">© 2026 Student Name</p>
+      <p class="footer-required">CISC3003 Web Programming - 2026： Student ID + Student Name</p>
+    </div>
+  </footer>
+</body>
+</html>
