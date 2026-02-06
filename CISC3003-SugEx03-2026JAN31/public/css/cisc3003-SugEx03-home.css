@@ -1,0 +1,128 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #ffffff;
+}
+img { max-width: 100%; display: block; }
+
+.container { width: 92%; max-width: 1100px; margin: 0 auto; }
+
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* ===== Header ===== */
+.site-header {
+  background: #0b1220;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.brand {
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 18px 0;
+}
+.main-nav { float: right; padding: 18px 0; }
+.main-nav a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  margin-left: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.main-nav a:hover { background: rgba(255,255,255,0.10); }
+.main-nav a.active { background: rgba(255,255,255,0.18); color: #fff; }
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(120deg, #0ea5e9, #22c55e);
+  color: #ffffff;
+  padding: 64px 0;
+}
+.hero h1 { margin: 0 0 10px; font-size: 40px; }
+.subtitle { margin: 0 0 22px; opacity: 0.95; max-width: 720px; }
+.hero-actions .btn { margin-right: 10px; }
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: #0b1220;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.btn:hover { opacity: 0.92; }
+.btn-ghost {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* ===== Sections ===== */
+.section { padding: 44px 0; }
+.section.alt { background: #f6f7fb; }
+.section h2 { margin-top: 0; font-size: 28px; }
+.muted { color: #6b7280; font-size: 14px; }
+
+.section-head h2 { float: left; }
+.section-nav { float: right; margin-top: 6px; }
+.section-nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #0ea5e9;
+  font-weight: 700;
+}
+
+/* ===== Float Grid ===== */
+.grid { margin: 16px -10px 0; }
+.col { float: left; padding: 0 10px; margin-bottom: 20px; }
+.col-4 { width: 33.3333%; }
+.col-6 { width: 50%; }
+
+/* ===== Cards & Photos ===== */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+.photo {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+}
+
+/* ===== Lists ===== */
+.bullets { padding-left: 18px; }
+.backtop a { color: #0ea5e9; text-decoration: none; font-weight: 700; }
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #0b1220;
+  color: rgba(255,255,255,0.85);
+  padding: 18px 0;
+}
+.site-footer p { margin: 6px 0; }
+.footer-course { color: rgba(255,255,255,0.95); font-weight: 700; }
+
+/* ===== Simple responsive fallback ===== */
+@media (max-width: 820px) {
+  .main-nav { float: none; }
+  .brand { float: none; display: inline-block; }
+  .col-4, .col-6 { width: 100%; }
+  .section-head h2, .section-nav { float: none; }
+  .section-nav a { margin-left: 0; margin-right: 10px; }
+}
+.photo {
+  max-width: 100%;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+}
