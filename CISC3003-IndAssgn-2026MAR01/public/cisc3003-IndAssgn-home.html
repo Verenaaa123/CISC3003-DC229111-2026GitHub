@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Li Wuyue Portfolio</title>
+    <link rel="stylesheet" href="cisc3003-IndAssgn-home.css" />
+  </head>
+  <body id="top">
+    <header>
+      <div class="logo">Li Wuyue</div>
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="cisc3003-IndAssgn-showcase.html">Showcase</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-image">
+          <img src="images/profile-photo.jpg" alt="Li Wuyue Profile Picture" />
+        </div>
+        <div class="hero-text">
+          <p class="greeting">Hello, I'm</p>
+          <h1>Li Wuyue</h1>
+          <h2>Computer Science Student & Aspiring AI Researcher</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-outline"
+              onclick="window.open('Wuyue Li-CV 0925 updated.pdf', '_blank')"
+            >
+              View CV (PDF)
+            </button>
+            <button class="btn btn-solid" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Hello, my name is Wuyue Li, a CS graduate from the University of Macau.
+          I want to share a bit about myself. Outside of academics, I walk my German Shepherd daily.
+          Though he looks tough, he's terrified of tiny dogs and stands guard whenever someone opens the door at home.
+          I’ve also been practicing traditional Chinese painting since I was seven, using it as a way to stay grounded and calm when stressed.
+        </p>
+        <p>
+          I enjoy hands-on work, and nothing excites me more than taking on complex problems and turning them into useful solutions.
+          During my internship at Electricidade de Macau, I was part of a manual asset-inventory project that frustrated the team.
+          Instead of patching up the system, I analyzed the user workflow and simplified the process, introducing structured inputs, real-time checks, and automation.
+          This approach sped up the process and reduced errors, and the team gained trust in the system.
+        </p>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section">
+        <h2>Experience(Qualifications)</h2>
+
+        <div class="exp-block">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>University of Macau</strong> | Bachelor of Computer Technology | Aug 2022 - Jun 2026</li>
+          </ul>
+        </div>
+
+        <div class="exp-block">
+          <h3>Internship Experience</h3>
+          <div class="job">
+            <h4>
+              Companhia de Electricidade de Macau (CEM)
+              <span>Macau SAR Summer Trainee 06/2025-07/2025</span>
+            </h4>
+            <ul>
+              <li>Normalized database to remove 340+ duplicate CMDB records and improved Python-to-Golang workflows.</li>
+              <li>Followed Agile methodologies to deliver 26 projects on schedule, managing 15% scope changes during the CMDB migration.</li>
+              <li>Joined a CEM site visit to gain hands-on experience with frontline power system operations.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h4>
+              Oriental Fund
+              <span>Beijing, China Intern, Department of Electronic Technology 06/2024-08/2024</span>
+            </h4>
+            <ul>
+              <li>Observed and learned the use of office software (OA, WPS) and gained familiarity with daily IT operations.</li>
+              <li>Shadowed the Electronics & Technology Department in resolving IT, hardware/software, and access issues.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+       
+        <h2 class="title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="images/CR.png" alt="Compositional Reasoning with Tricks" class="project-img" />
+            <h3 class="project-title">Compositional Reasoning with Tricks</h3>
+            <div class="project-btn-container">
+              <button
+                class="project-btn"
+                onclick="window.open('https://github.com/Verenaaa123/Compositional-Reasoning-with-Tricks', '_blank')"
+              >
+                GitHub
+              </button>
+              <button class="project-btn" onclick="location.href='cisc3003-IndAssgn-demo01.html'">Demo 01</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/BR.png" alt="2025_CIS_GraduationProject/G_Y25_MaTCH" class="project-img" />
+            <h3 class="project-title">2025_CIS_GraduationProject/G_Y25_MaTCH</h3>
+            <div class="project-btn-container">
+              <button
+                class="project-btn"
+                onclick="window.open('https://git-cds.sicc.um.edu.mo/2025_CIS_GraduationProject/G_Y25_MaTCH', '_blank')"
+              >
+                GitHub
+              </button>
+              <button class="project-btn" onclick="location.href='cisc3003-IndAssgn-demo02.html'">Demo 02</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-card">
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p>+86 19568788121</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:dc22911@um.edu.mo">dc22911@um.edu.mo</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>CISC3003 Web Programming - 2025: dc229111 Li Wuyue</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+/* =========================================================
+   Base
+   ========================================================= */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f1f2f7;
+  color: #111;
+  line-height: 1.45;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* 标题/导航用 sans-serif */
+h1, h3, .topnav a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* =========================================================
+   Links (Requirement)
+   - link text color: #00B0FF
+   - hover background: #F50057
+   ========================================================= */
+a:link,
+a:visited {
+  color: #00B0FF;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #F50057;
+  color: #fff;
+}
+
+/* =========================================================
+   Header + Footer (Given Hint)
+   ========================================================= */
+header, footer {
+  color: white;
+  background-color: #1A237E;
+  margin: 0em 4em 0.25em 4em;
+}
+
+.site-header {
+  padding: 1.2em 1.5em 0.9em 1.5em;
+}
+
+.site-footer {
+  padding: 1em 1.5em;
+}
+
+.brand h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+  margin-top: 0.2em;
+}
+
+/* =========================================================
+   Top nav: make it look like CENTRAL PARK title bar style
+   (same idea as .panel-title)
+   ========================================================= */
+.topnav {
+  margin-top: 0.8em;
+}
+
+.topnav ul {
+  list-style: none;
+}
+
+.topnav li {
+  display: inline-block;
+  margin-right: 0.6em;
+}
+
+.topnav a {
+  display: inline-block;
+  background: #7986CB;      /* 跟 CENTRAL PARK 标题条一致 */
+  padding: 0.45em 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: 0;
+}
+
+/* =========================================================
+   Main layout
+   ========================================================= */
+.page {
+  margin: 0 4em 1.5em 4em;
+  background: #fff;
+  padding: 1.2em;
+}
+
+.panel {
+  margin-bottom: 1.2em;
+}
+
+/* 区块标题条：#7986CB */
+.panel-title {
+  background: #7986CB;
+  color: #fff;
+  padding: 0.55em 0.75em;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   Hero / Description: #C5CAE9
+   ========================================================= */
+.hero {
+  background: #C5CAE9;
+  padding: 1em;
+}
+
+/* 图片等比例缩放 */
+.hero img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero figcaption {
+  margin-top: 0.6em;
+  color: #666;
+}
+
+.desc-box {
+  background: #fff;
+  border: 0.06em solid #ddd;
+  padding: 0.85em;
+}
+
+/* =========================================================
+   Related Photos
+   ========================================================= */
+.thumbs {
+  background: #C5CAE9;
+  border: 0.06em solid #ddd;
+  padding: 0.9em;
+}
+
+.thumbs a {
+  display: inline-block;
+  margin-right: 0.8em;
+  padding: 0.15em;
+  text-decoration: none;
+}
+
+.thumbs img {
+  width: 6.4em;
+  height: auto;
+  display: block;
+  border: 0.18em solid #fff;
+}
+
+/* =========================================================
+   Reviews
+   - only dates (time) are #FF80AB
+   ========================================================= */
+.review {
+  background: #fff;
+  border: 0.06em solid #ddd;
+  border-top: none;
+  padding: 0.85em;
+}
+
+#reviews .panel-title + .review {
+  border-top: 0.06em solid #ddd;
+}
+
+.byline {
+  font-size: 0.95rem;
+  margin-bottom: 0.25em;
+}
+
+.byline time {
+  color: #FF80AB;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+.foot-links a {
+  text-decoration: none;
+  padding: 0.15em 0.35em;
+}
+
+.foot-links a:hover {
+  color: #fff;
+}
