@@ -1,0 +1,9 @@
+@import url("./cisc3003-PairAssgn-base.css");
+
+:root {
+  --accent: #166534;
+  --accent-dark: #14532d;
+  --accent-soft: rgba(22, 101, 52, 0.14);
+  --hero-start: #ecfdf5;
+  --hero-end: #fefce8;
+}
