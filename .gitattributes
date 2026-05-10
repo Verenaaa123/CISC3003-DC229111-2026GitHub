@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 cisc3003-Team04-DC229111-ProjectDigiStory.mp4.zip filter=lfs diff=lfs merge=lfs -text
+cisc3003-Team04-ProjectDigiStory.zip filter=lfs diff=lfs merge=lfs -text
