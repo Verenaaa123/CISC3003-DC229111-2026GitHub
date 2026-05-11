@@ -13,7 +13,7 @@
             <div class="form-container sign-up-container">
                 <form action="#" method="post">
                     <h1>Join Us</h1>
-                    <div class="social-container" aria-label="Social sign up options">
+                    <div class="social-container">
                         <a href="#" class="social" aria-label="Sign up with Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#" class="social" aria-label="Sign up with Google"><i class="fa-brands fa-google-plus-g"></i></a>
                         <a href="#" class="social" aria-label="Sign up with LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -29,7 +29,7 @@
             <div class="form-container sign-in-container">
                 <form action="#" method="post">
                     <h1>Log In</h1>
-                    <div class="social-container" aria-label="Social sign in options">
+                    <div class="social-container">
                         <a href="#" class="social" aria-label="Sign in with Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#" class="social" aria-label="Sign in with Google"><i class="fa-brands fa-google-plus-g"></i></a>
                         <a href="#" class="social" aria-label="Sign in with LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
