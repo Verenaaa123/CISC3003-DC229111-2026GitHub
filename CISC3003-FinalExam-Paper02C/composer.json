@@ -1,0 +1,8 @@
+{
+  "name": "liwuyue/cisc3003-final-exam-paper02c",
+  "description": "CISC3003 Final Exam Paper 02 Scenario C with authentication, activation, and password reset",
+  "type": "project",
+  "require": {
+    "phpmailer/phpmailer": "^6.10"
+  }
+}

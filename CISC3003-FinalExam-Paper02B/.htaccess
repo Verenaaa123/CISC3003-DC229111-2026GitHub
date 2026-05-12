@@ -1,0 +1,3 @@
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^(index|register|login|logout|dashboard|debug)\.php$ php/$1.php [R=302,L]

@@ -1,0 +1,8 @@
+{
+  "name": "liwuyue/cisc3003-final-exam-paper02b",
+  "description": "CISC3003 Final Exam Paper 02 Scenario B with PHPMailer",
+  "type": "project",
+  "require": {
+    "phpmailer/phpmailer": "^6.10"
+  }
+}

@@ -1,3 +1,8 @@
 CISC3003-PairAssgn-Pair16-DC229111.zip
 .DS_Store
 cisc3003-PairAssgn-2026APR02.zip
+.metadata/
+*.zip
+*/php/config.local.php
+*/logs/*.log
+*/logs/*.pid

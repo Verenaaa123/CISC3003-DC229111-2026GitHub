@@ -1,0 +1,285 @@
+/* =========================================================
+   CISC3003 Final Exam Paper 02C - Account System Styling
+   Student: Li Wuyue DC229111
+   ========================================================= */
+:root {
+    --ink: #1d2433;
+    --muted: #647184;
+    --line: #d7dfeb;
+    --surface: #ffffff;
+    --page: #f4f6fa;
+    --primary: #245a73;
+    --primary-dark: #183f52;
+    --accent: #7c5b22;
+    --success: #16713d;
+    --warning: #9a5a05;
+    --danger: #b42318;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--page);
+    line-height: 1.55;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 28px clamp(18px, 4vw, 56px);
+    color: #ffffff;
+    background: #20303d;
+}
+
+.site-header h1 {
+    margin: 0;
+    max-width: 860px;
+    font-size: clamp(1.65rem, 3vw, 2.55rem);
+    line-height: 1.1;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #b8e3f4;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.lede {
+    max-width: 800px;
+    margin: 12px 0 0;
+    color: #e2edf5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a,
+.button-link,
+button {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+main {
+    flex: 1;
+    width: min(1180px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.scenario-c-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr) minmax(340px, 1.15fr);
+    gap: 24px;
+}
+
+.auth-shell {
+    max-width: 760px;
+}
+
+.panel,
+.auth-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 16px 34px rgba(29, 36, 51, 0.08);
+}
+
+.task-list li + li {
+    margin-top: 9px;
+}
+
+.auth-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tab-button {
+    color: var(--primary-dark);
+    background: #edf5f8;
+    border-color: #bfdae5;
+}
+
+.tab-button.active {
+    color: #ffffff;
+    background: var(--primary);
+}
+
+.auth-panel {
+    display: none;
+}
+
+.auth-panel.active {
+    display: block;
+}
+
+.stacked-form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 800;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #b7c4d4;
+    border-radius: 6px;
+    padding: 11px 12px;
+    font: inherit;
+    background: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(36, 90, 115, 0.2);
+    border-color: var(--primary);
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.terms input {
+    width: auto;
+}
+
+button,
+.button-link {
+    color: #ffffff;
+    background: var(--primary);
+}
+
+button:hover,
+.button-link:hover {
+    background: var(--primary-dark);
+}
+
+a {
+    color: var(--primary-dark);
+}
+
+.field-hint {
+    min-height: 22px;
+    margin: -8px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.field-hint.ok {
+    color: var(--success);
+}
+
+.field-hint.bad {
+    color: var(--danger);
+}
+
+.notice {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.notice.success {
+    color: var(--success);
+    background: #ecfdf3;
+    border-color: #badfcc;
+}
+
+.notice.warning {
+    color: var(--warning);
+    background: #fff8e8;
+    border-color: #f5d48d;
+}
+
+.notice.error {
+    color: var(--danger);
+    background: #fff1f0;
+    border-color: #fecaca;
+}
+
+.result-list {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 8px 14px;
+}
+
+.result-list dt {
+    font-weight: 800;
+}
+
+code {
+    font-family: Menlo, Consolas, monospace;
+}
+
+footer {
+    margin-top: auto;
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: #1d2433;
+    font-weight: 700;
+}
+
+@media (max-width: 860px) {
+    .site-header,
+    .scenario-c-grid {
+        display: block;
+    }
+
+    nav {
+        margin-top: 18px;
+    }
+
+    .panel + .auth-card,
+    .panel + .panel {
+        margin-top: 24px;
+    }
+
+    .result-list {
+        grid-template-columns: 1fr;
+    }
+}

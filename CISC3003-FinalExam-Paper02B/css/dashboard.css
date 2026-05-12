@@ -1,0 +1,49 @@
+/* =========================================================
+   CISC3003 Final Exam Paper 02B - Dashboard Styling
+   ========================================================= */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border: 1px solid #d6dde8;
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 14px 30px rgba(23, 32, 51, 0.08);
+}
+
+.dashboard-card.primary {
+    color: #ffffff;
+    background: #1f5f8b;
+}
+
+.dashboard-card.wide {
+    grid-column: 1 / -1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #d6dde8;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eef4f9;
+}
+
+@media (max-width: 760px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
